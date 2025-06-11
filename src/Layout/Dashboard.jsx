@@ -1,42 +1,42 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Dashboard = () => {
   return (
     <div>
         <section id="dashboard">
-         <div class="container">
-            <div class="dashboard-area">
-               <div class="dashboard-menu">
+         <div>
+            <div class="dashboard-area flex gap-10">
+               <div class="dashboard-menu p-5 shadow-xl">
                   <div class="profile">
-                     <img src="https://avatars.githubusercontent.com/u/115138025?v=4" alt="student" />
+                     <img className='rounded-full' src="https://avatars.githubusercontent.com/u/115138025?v=4" alt="student" />
                      <h3 class="profile-name">Md Ridoy Sharif</h3>
                   </div>
-                  <nav>
+                  <nav className='mt-5'>
                      <ul class="menu">
-                        <li class="active"><a href="#">Information</a></li>
-                        <li><a href="#">Skill</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Experience</a></li>
-                        <li><a href="#">Address</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Social</a></li>
+                        <li className='mb-5'><Link to={''}>Skill</Link></li>
+                        <li className='mb-5'><Link to={''}>Education</Link></li>
+                        <li className='mb-5'><Link to={''}>Experience</Link></li>
+                        <li className='mb-5'><Link to={''}>Address</Link></li>
+                        <li className='mb-5'><Link to={''}>Portfolio</Link></li>
+                        <li className='mb-5'><Link to={''}>Blog</Link></li>
+                        <li className='mb-5'><Link to={''}>Contact</Link></li>
+                        <li className='mb-5'><Link to={''}>Social</Link></li>
                      </ul>
                   </nav>
                </div>
                <div>
-                  <div class="top-navbar">
-                      <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Project</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                  <div class="top-navbar shadow-xl p-5">
+                      <ul className='flex gap-10'>
+                        <li><Link to={''}>Home</Link></li>
+                        <li><Link to={''}>About</Link></li>
+                        <li><Link to={''}>Services</Link></li>
+                        <li><Link to={''}>Project</Link></li>
+                        <li><Link to={''}>Blog</Link></li>
+                        <li><Link to={''}>Contact</Link></li>
                       </ul>
                   </div>
-                  <div class="dashboard-details">
+                  <div class="dashboard-details mt-10">
                     <div class="about-me-info">
                        <h3 class="about-me-title">About Me</h3>
                        <p class="about-me-description">
