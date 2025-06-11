@@ -64,10 +64,10 @@ const toggleTheme =()=>setIsDark(!isDark)
                 <div className='flex items-center gap-5'>
                     <ul className='flex gap-10'>
                         <li>
-                            <Link to={'/'} className='header-menu'>Login</Link>
+                            <Link to={'/login'} className='header-menu'>Login</Link>
                         </li>
                         <li>
-                            <Link to={'/'} className='header-menu'>Sign Up</Link>
+                            <Link to={'/signup'} className='header-menu'>Sign Up</Link>
                         </li>
                     </ul>
                     {/* light and dark mood toggle button */}
