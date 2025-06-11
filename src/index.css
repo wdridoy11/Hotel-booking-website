@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.e-container{
+    @apply container mx-auto px-5;
+}
+.e-button{
+    @apply bg-secondary text-while text-base py-2 px-6 hover:bg-while hover:text-black duration-500;
+}
+.e-heading{
+    @apply text-3xl font-semibold text-black dark:text-while text-center;
+}
+/*===== dark and light mood color change =====*/
+.light-dark-bg{
+    @apply bg-while dark:bg-gray;
+}
+.light-dark-text{
+    @apply text-black dark:text-while;
+}
+/*===== header and footer menu design ===== */
+.footer-menu{
+    @apply block text-black dark:text-while text-base font-normal mb-2 hover:underline hover:text-secondary duration-500;
+}
+.header-menu{
+    @apply text-black dark:text-while text-base font-normal hover:underline hover:text-secondary duration-500;
+}
+.footer-social-menu{
+    @apply text-black dark:text-while text-2xl hover:text-secondary duration-500;
+}
